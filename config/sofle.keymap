@@ -640,7 +640,7 @@
             key-positions = <31 32>;
         };
 
-        new_combo {
+        dcxdcx {
             bindings = <&kp LEFT_ALT>;
             key-positions = <25 26>;
         };
@@ -651,8 +651,13 @@
         };
 
         iii {
-            bindings = <&kp BACKSPACE>;
+            bindings = <&kp ESCAPE>;
             key-positions = <14 15>;
+        };
+
+        cxddcx {
+            bindings = <&kp ESCAPE>;
+            key-positions = <20 21>;
         };
     };
 };
