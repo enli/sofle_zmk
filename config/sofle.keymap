@@ -650,7 +650,7 @@
             key-positions = <34 33>;
         };
 
-        new_combo {
+        iii {
             bindings = <&kp BACKSPACE>;
             key-positions = <14 15>;
         };
