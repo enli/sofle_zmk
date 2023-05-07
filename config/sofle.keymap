@@ -46,6 +46,26 @@
 / {
     combos {
         compatible = "zmk,combos";
+
+        kplshift {
+            bindings = <&kp LEFT_SHIFT>;
+            key-positions = <27 26>;
+        };
+
+        kprshift {
+            bindings = <&kp RSHIFT>;
+            key-positions = <33 32>;
+        };
+
+        kplctrl {
+            bindings = <&kp LCTRL>;
+            key-positions = <27 28>;
+        };
+
+        kprctrl {
+            bindings = <&kp RCTRL>;
+            key-positions = <31 32>;
+        };
     };
 };
 
@@ -246,10 +266,10 @@
 
         l2 {
             bindings = <
-&trans         &trans        &trans         &trans         &trans        &trans                              &trans          &trans            &trans             &trans           &trans  &trans
-&trans         &trans  &kp LS(AMPS)   &kp LS(STAR)   &kp LS(LPAR)        &trans                              &trans  &kp LEFT_BRACE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &trans
-&trans  &kp LS(COLON)  &kp LS(DLLR)  &kp LS(PRCNT)  &kp LS(CARET)  &kp LS(PLUS)                            &kp LEFT        &kp LEFT          &kp DOWN             &kp UP        &kp RIGHT  &trans
-&trans  &kp LS(TILDE)  &kp LS(EXCL)     &kp LS(AT)  &kp LS(POUND)  &kp LS(PIPE)         &trans     &trans    &trans          &trans            &trans             &trans           &trans  &trans
+&trans         &trans        &trans         &trans         &trans        &trans                              &trans          &trans            &trans             &trans     &trans           &trans
+&trans         &trans  &kp LS(AMPS)   &kp LS(STAR)   &kp LS(LPAR)        &trans                              &trans  &kp LEFT_BRACE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET     &trans           &trans
+&trans  &kp LS(COLON)  &kp LS(DLLR)  &kp LS(PRCNT)  &kp LS(CARET)  &kp LS(PLUS)                            &kp LEFT        &kp LEFT          &kp DOWN             &kp UP  &kp RIGHT  &kp RIGHT_BRACE
+&trans  &kp LS(TILDE)  &kp LS(EXCL)     &kp LS(AT)  &kp LS(POUND)  &kp LS(PIPE)         &trans     &trans    &trans          &trans            &trans             &trans     &trans           &trans
                              &trans         &trans         &trans  &kp LS(RPAR)  &kp LS(UNDER)  &kp MINUS  &kp FSLH          &trans            &trans             &trans
             >;
 
