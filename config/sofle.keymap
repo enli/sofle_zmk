@@ -829,17 +829,17 @@
 
         l0 {
             bindings = <
-          &trans  &trans  &trans  &trans  &trans        &trans                                     &trans  &trans     &trans   &trans    &trans                   &trans
-          &trans  &trans   &kp W   &kp F   &kp P        &trans                                     &trans   &kp L      &kp U    &kp Y    &trans                   &trans
-&mt LEFT_GUI TAB   &kp A   &kp R   &kp S   &kp T         &kp G                                      &kp M   &kp N      &kp E    &kp I     &kp O  &mt RIGHT_GUI BACKSPACE
-          &trans   &kp Z   &kp X   &kp C   &kp D         &kp V       &trans       &trans            &kp K   &kp H  &kp COMMA  &kp DOT  &kp FSLH                   &trans
-                          &trans  &trans  &trans  &lt 1 ESCAPE  &lt 2 SPACE  &lt 2 ENTER  &lt 1 BACKSPACE  &trans     &trans   &trans
+          &trans  &trans  &trans  &trans  &trans       &trans                                   &trans  &trans     &trans   &trans    &trans                   &trans
+          &trans  &trans   &kp W   &kp F   &kp P       &trans                                   &trans   &kp L      &kp U    &kp Y    &trans                   &trans
+&mt LEFT_GUI DEL   &kp A   &kp R   &kp S   &kp T        &kp G                                    &kp M   &kp N      &kp E    &kp I     &kp O  &mt RIGHT_GUI BACKSPACE
+          &trans   &kp Z   &kp X   &kp C   &kp D        &kp V     &trans       &trans            &kp K   &kp H  &kp COMMA  &kp DOT  &kp FSLH                   &trans
+                          &trans  &trans  &trans  &lt 1 SPACE  &lt 2 TAB  &lt 2 ENTER  &lt 1 BACKSPACE  &trans     &trans   &trans
             >;
 
             label = "main";
             sensor-bindings =
                 <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>,
-                <&inc_dec_kp RIGHT_ARROW LEFT_ARROW>;
+                <&inc_dec_kp RIGHT LEFT>;
         };
 
         l1 {
@@ -856,11 +856,11 @@
 
         l2 {
             bindings = <
-&trans         &trans        &trans         &trans         &trans        &trans                                           &trans          &trans         &trans           &trans                 &trans             &trans
-&trans         &trans  &kp LS(AMPS)   &kp LS(STAR)   &kp LS(LPAR)        &trans                                           &trans       &kp K_CUT     &kp K_COPY      &kp K_PASTE                 &trans             &trans
-&trans  &kp LS(COLON)  &kp LS(DLLR)  &kp LS(PRCNT)  &kp LS(CARET)  &kp LS(PLUS)                                 &kp LEFT_BRACKET        &kp LEFT       &kp DOWN           &kp UP              &kp RIGHT  &kp RIGHT_BRACKET
-&trans  &kp LS(TILDE)  &kp LS(EXCL)     &kp LS(AT)  &kp LS(POUND)  &kp LS(PIPE)         &trans      &trans  &kp LEFT_PARENTHESIS  &kp LEFT_BRACE  &kp SEMICOLON  &kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS             &trans
-                             &trans         &trans         &trans  &kp LS(RPAR)  &kp LS(UNDER)  &kp C_MENU              &kp FSLH          &trans         &trans           &trans
+          &trans         &trans        &trans         &trans         &trans        &trans                                           &trans          &trans         &trans           &trans                 &trans             &trans
+          &trans         &trans  &kp LS(AMPS)   &kp LS(STAR)   &kp LS(LPAR)        &trans                                           &trans    &kp C_AC_CUT  &kp C_AC_COPY   &kp C_AC_PASTE                 &trans             &trans
+&kp C_PLAY_PAUSE  &kp LS(COLON)  &kp LS(DLLR)  &kp LS(PRCNT)  &kp LS(CARET)  &kp LS(PLUS)                                 &kp LEFT_BRACKET        &kp LEFT       &kp DOWN           &kp UP              &kp RIGHT  &kp RIGHT_BRACKET
+          &trans  &kp LS(TILDE)  &kp LS(EXCL)     &kp LS(AT)  &kp LS(POUND)  &kp LS(PIPE)         &trans      &trans  &kp LEFT_PARENTHESIS  &kp LEFT_BRACE  &kp SEMICOLON  &kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS             &trans
+                                       &trans         &trans         &trans  &kp LS(RPAR)  &kp LS(UNDER)  &kp C_MENU              &kp FSLH          &trans         &trans           &trans
             >;
 
             label = "sym";
