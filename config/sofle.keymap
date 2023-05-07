@@ -589,6 +589,56 @@
 / {
     combos {
         compatible = "zmk,combos";
+
+        r {
+            bindings = <&kp LEFT_SHIFT>;
+            key-positions = <26 27>;
+        };
+
+        ls {
+            bindings = <&kp RIGHT_SHIFT>;
+            key-positions = <33 32>;
+        };
+
+        u {
+            bindings = <&kp LS(RCTRL)>;
+            key-positions = <31 32 33>;
+        };
+
+        lkh {
+            bindings = <&kp LC(LEFT_SHIFT)>;
+            key-positions = <28 27 26>;
+        };
+
+        qq {
+            bindings = <&kp Q>;
+            key-positions = <25 14>;
+        };
+
+        jjj {
+            bindings = <&kp J>;
+            key-positions = <20 31>;
+        };
+
+        bbb {
+            bindings = <&kp B>;
+            key-positions = <15 28>;
+        };
+
+        yuu {
+            bindings = <&kp DOUBLE_QUOTES>;
+            key-positions = <21 34>;
+        };
+
+        strstr {
+            bindings = <&kp LCTRL>;
+            key-positions = <28 27>;
+        };
+
+        vcdv {
+            bindings = <&kp RCTRL>;
+            key-positions = <31 32>;
+        };
     };
 };
 
