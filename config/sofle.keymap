@@ -639,6 +639,16 @@
             bindings = <&kp RCTRL>;
             key-positions = <31 32>;
         };
+
+        new_combo {
+            bindings = <&kp LEFT_ALT>;
+            key-positions = <25 26>;
+        };
+
+        tyyy {
+            bindings = <&kp RIGHT_ALT>;
+            key-positions = <34 33>;
+        };
     };
 };
 
