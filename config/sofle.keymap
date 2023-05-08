@@ -616,7 +616,7 @@
         };
 
         jjj {
-            bindings = <&kp J>;
+            bindings = <&kp Z>;
             key-positions = <20 31>;
         };
 
