@@ -38,6 +38,12 @@
             bindings = <&bt BT_SEL 1>;
             key-positions = <31 32 33>;
         };
+
+        bt-clear-profile {
+            bindings = <&bt BT_CLR>;
+            key-positions = <13 14 15>;
+            layers = <2>;
+        };
     };
 
     keymap {
