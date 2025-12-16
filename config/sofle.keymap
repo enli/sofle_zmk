@@ -24,27 +24,6 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT_SHIFT>, <&kp CAPSLOCK>;
         };
-
-        k1_and_f1: k1_and_f1 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "K1_AND_F1";
-            #binding-cells = <0>;
-            bindings = <&kp NUMBER_1>, <&kp F1>;
-        };
-
-        k2_and_f2: k2_and_f2 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "K2_AND_F2";
-            #binding-cells = <0>;
-            bindings = <&kp NUMBER_2>, <&kp F2>;
-        };
-
-        k3_and_f3: k3_and_f3 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "K3_AND_F3";
-            #binding-cells = <0>;
-            bindings = <&kp NUMBER_3>, <&kp F3>;
-        };
     };
 
     combos {
@@ -103,11 +82,11 @@
             //               | CAPS| ALT  | GUI/-| SPACE|LOWER/[ |  |RAISE/]| ENTER|  GUI/=|  ALT  | CTRL |
 
             bindings = <
-&esc_tilde        &k1_and_f1  &k2_and_f2    &k3_and_f3    &kp N4     &kp N5                             &kp N6       &kp N7       &kp N8       &kp N9         &kp N0    &kp MINUS
-&lt 2 TAB         &kp Q       &kp W         &kp E         &kp R      &kp T                              &kp Y        &kp U        &kp I        &kp O          &kp P     &kp BSPC
-&shift_caps       &kp A       &kp S         &kp D         &lt 2 F    &kp G                              &kp H        &lt 1 J      &kp K        &kp L          &kp SEMI  &mt RCTRL SQT
-&kp LEFT_CONTROL  &kp Z       &kp X         &kp C         &kp V      &kp B        &kp C_MUTE  &kp C_PP  &kp N        &kp M        &kp COMMA    &kp DOT        &kp FSLH  &mt RIGHT_SHIFT DELETE
-                              &kp LEFT_GUI  &kp LEFT_ALT  &kp SPACE  &lt 2 SPACE  &tog 2      &tog 1    &lt 1 ENTER  &lt 1 ENTER  &kp PAGE_UP  &kp PAGE_DOWN
+&esc_tilde        &kp N1  &kp N2        &kp N3        &kp N4     &kp N5                             &kp N6       &kp N7       &kp N8       &kp N9         &kp N0    &kp MINUS
+&lt 2 TAB         &kp Q   &kp W         &kp E         &kp R      &kp T                              &kp Y        &kp U        &kp I        &kp O          &kp P     &kp BSPC
+&shift_caps       &kp A   &kp S         &kp D         &lt 2 F    &kp G                              &kp H        &lt 1 J      &kp K        &kp L          &kp SEMI  &mt RCTRL SQT
+&kp LEFT_CONTROL  &kp Z   &kp X         &kp C         &kp V      &kp B        &kp C_MUTE  &kp C_PP  &kp N        &kp M        &kp COMMA    &kp DOT        &kp FSLH  &mt RIGHT_SHIFT DELETE
+                          &kp LEFT_GUI  &kp LEFT_ALT  &kp SPACE  &lt 2 SPACE  &tog 2      &tog 1    &lt 1 ENTER  &lt 1 ENTER  &kp PAGE_UP  &kp PAGE_DOWN
             >;
 
             sensor-bindings =
